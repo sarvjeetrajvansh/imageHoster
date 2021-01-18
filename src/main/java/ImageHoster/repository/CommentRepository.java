@@ -16,7 +16,7 @@ public class CommentRepository {
 
     //The method creates an instance of EntityManager
     //Returns the list of all the comments database
-    public List<Comment> commentsByImageID(Integer imageId) {
+    public List<Comment> commentByImageID(Integer imageId) {
         EntityManager em = emf.createEntityManager();
         TypedQuery<Comment> comments = em.createQuery("SELECT c FROM Comment c WHERE c.image_id = :imageId", Comment.class);
         comments.setParameter("imageId", imageId);
