@@ -47,8 +47,8 @@ public class UserController {
         return "redirect:/users/login";
     }
     else {
-                String error = "Password must contain atleast 1 alphabet, 1 number & 1 special character";
-                model.addAttribute("passwordTypeError", error);
+                String passworderror = "Password must contain atleast 1 alphabet, 1 number & 1 special character";
+                model.addAttribute("passwordTypeError", passworderror);
                 model.addAttribute("User", user);
                 return "/users/registration";
             }
