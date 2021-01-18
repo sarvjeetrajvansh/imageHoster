@@ -9,5 +9,6 @@ import org.springframework.context.annotation.ComponentScan;
 public class ImageHosterApplication {
     public static void main(String[] args) {
         SpringApplication.run(ImageHosterApplication.class, args);
+        //starting Spring Boot Application
     }
 }
